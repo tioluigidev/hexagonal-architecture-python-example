@@ -4,6 +4,7 @@ from shared.model_location import ModelLocation
 from domain.location_domain_service import LocationDomainService
 from domain.decision_domain_service import DecisionDomainService
 
+
 class WeatherApplicationService:
     database_port: DatabasePort
     weather_api_port: WeatherAPIPort

@@ -1,6 +1,6 @@
 import sqlite3
-
 from application.ports.database_port import DatabasePort
+
 
 class SQLite3DatabaseAdapter(DatabasePort):
     def store_weather_temperature(self, temperature):

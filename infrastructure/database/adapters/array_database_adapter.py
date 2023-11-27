@@ -2,6 +2,7 @@ from application.ports.database_port import DatabasePort
 
 table = []
 
+
 class ArrayDatabaseAdapter(DatabasePort):
     def store_weather_temperature(self, temperature):
         table.append(temperature)

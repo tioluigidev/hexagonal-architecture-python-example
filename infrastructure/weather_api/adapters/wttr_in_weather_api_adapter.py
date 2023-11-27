@@ -1,8 +1,8 @@
 import requests
 import json
-
 from application.ports.weather_api_port import WeatherAPIPort
 from shared.model_location import ModelLocation
+
 
 class WttrInWeatherAPIAdapter(WeatherAPIPort):
     def get_weather_temperature(self, location:ModelLocation):
