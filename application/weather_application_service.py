@@ -1,6 +1,6 @@
 from application.ports.database_port import DatabasePort
 from application.ports.weather_api_port import WeatherAPIPort
-from shared.model_location import ModelLocation
+from shared.location_model import LocationModel
 from domain.location_domain_service import LocationDomainService
 from domain.decision_domain_service import DecisionDomainService
 
@@ -8,7 +8,7 @@ from domain.decision_domain_service import DecisionDomainService
 class WeatherApplicationService:
     database_port: DatabasePort
     weather_api_port: WeatherAPIPort
-    location: ModelLocation
+    location: LocationModel
 
     def __init__(self, 
                  database_port: DatabasePort,

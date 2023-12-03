@@ -1,7 +1,7 @@
-from shared.model_location import ModelLocation
+from shared.location_model import LocationModel
 
 
 class LocationDomainService:
     @staticmethod
     def get_location():
-        return ModelLocation('Rio de Janeiro', -22.9035, -43.2069)
+        return LocationModel('Rio de Janeiro', -22.9035, -43.2069)

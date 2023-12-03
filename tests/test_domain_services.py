@@ -1,6 +1,6 @@
 from domain.decision_domain_service import DecisionDomainService
 from domain.location_domain_service import LocationDomainService
-from shared.model_location import ModelLocation
+from shared.location_model import LocationModel
 
 
 def test_decision_ds_dont_go_outside():
@@ -17,7 +17,7 @@ def test_decision_ds_nice_to_go():
 
 def test_location_ds_get_location():
     location = LocationDomainService.get_location()
-    assert isinstance(location, ModelLocation)
+    assert isinstance(location, LocationModel)
     assert location.city is not None
     assert location.latitude is not None
     assert location.longitude is not None

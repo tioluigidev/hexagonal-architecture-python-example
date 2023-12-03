@@ -1,4 +1,4 @@
-class ModelLocation:
+class LocationModel:
     def __init__(self, city: str, latitude: float, longitude: float):
         self.city = city
         self.latitude = latitude
