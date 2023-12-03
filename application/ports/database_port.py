@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class DatabasePort(ABC):
     @abstractmethod
     def store_weather_temperature(self, temperature):
