@@ -6,13 +6,6 @@ from domain.decision_domain_service import DecisionDomainService
 
 
 class WeatherApplicationService:
-<<<<<<< HEAD
-    database_port: DatabasePort
-    weather_api_port: WeatherAPIPort
-    location: LocationModel
-
-=======
->>>>>>> fe7825b19b8c821a6bf27dd92d481a8946b5975e
     def __init__(self, 
                  database: DatabasePort,
                  weather_api: WeatherAPIPort):
